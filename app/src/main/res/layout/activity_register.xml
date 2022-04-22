@@ -6,30 +6,45 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#EAEAEA"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <ImageButton
-            android:id="@+id/gotoLoginButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/abc_vector_test" />
+        <ImageView
+            android:id="@+id/bt_before"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/back_icon" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="298dp"
-            android:layout_height="40dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="140dp"
+            android:layout_weight="0"
+            android:foregroundGravity="center"
             android:gravity="center"
-            android:text="새 계정 생성"
-            android:textColor="@color/black"
+            android:text="회원 가입"
+            android:textColor="#070606"
             android:textSize="18sp"
-            android:textStyle="normal" />
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="-40dp"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -84,6 +99,70 @@
             android:ems="10"
             android:hint="생년월일"
             android:inputType="date" />
+
+        <EditText
+            android:id="@+id/et_moneyNumber"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="계좌번호"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이용이 처음이라면,"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="패밀리코드 발급을 눌러 계정을 만들어주세요.\n\n" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이미 패밀리코드를 안다면,"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가족에게 받은 패밀리코드를 작성 후 계정을 만들어주세요.\n" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0"
+                android:ems="10"
+                android:hint="패밀리코드"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/bt_createcode"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:text="코드 발급"
+                android:textColor="#050404"
+                app:backgroundTint="@android:color/holo_orange_light" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btn_register"

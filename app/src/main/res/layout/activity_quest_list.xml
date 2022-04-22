@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="389dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="365dp"
+        android:background="#EAEAEA"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/bt_before2"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_questuserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_weight="0"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="퀘스트 추가"
+            android:textColor="#070606"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="401dp"
+        android:layout_height="609dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:text="가족끼리 하고 싶은 퀘스트를 입력해주세요😎"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_questemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FEFAFA" />
+
+        <RadioGroup
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_custom_buttontwo"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="always"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <EditText
+                android:id="@+id/et_user_quest"
+                android:layout_width="383dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="퀘스트를 작성해주세요."
+                android:inputType="textPersonName" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_quest_choice"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_custom_button"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="입력 완료"
+            android:textColor="#191111"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+        <TextView
+            android:id="@+id/tv_ex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FBFBFB" />
+
+        <TextView
+            android:id="@+id/tv_familyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#FBFAFA" /><![CDATA[
+
+
+
+        />
+
+
+    ]]>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

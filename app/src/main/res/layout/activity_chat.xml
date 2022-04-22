@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".chat.chatMainActivity">
 
     <TextView
-        android:id="@+id/send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Send"
-        android:textColor="@color/black"
-        android:textSize="17sp" />
-
-    <EditText
-        android:id="@+id/messageBox"
+        android:id="@+id/chatTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@id/send"
-        android:hint="Enter a message"/>
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
 
-    <ListView
-        android:id="@+id/messageList"
+    <TextView
+        android:id="@+id/chatView"
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/messageBox"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:visibility="visible" />
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:hint="메시지를 입력하세요." />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/chatbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_custom_button_quest"
+            android:backgroundTint="#100909"
+            android:text="chat"
+            android:textColor="#0B0909"
+            app:backgroundTint="@android:color/holo_orange_light" />
+    </LinearLayout>
+
+</LinearLayout>

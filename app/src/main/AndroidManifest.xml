@@ -4,10 +4,11 @@
 
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
 
     <application
@@ -18,21 +19,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Honeybee"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".login.loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".FamilyCodeActivity" />
-        <activity android:name=".story.Fragment_post_story"/>
-        <activity android:name=".calendar.CalenderActivity"/>
-        <activity android:name=".ChatActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".calendar.calendarMainActivity" />
+        <activity android:name=".calendar.calendarPlusActivity"/>
+        <activity android:name=".chat.chatMainActivity"/>
+        <activity android:name=".mainActivity"/>
+        <activity android:name=".story.storyMainActivity"/>
+        <activity android:name=".register.registerActivity"/>
+        <activity android:name=".locationMainActivity"/>
+        <activity android:name=".story.storyPostActivity"/>
+        <activity android:name=".quest.questsActivity"/>
+        <activity android:name=".myinfo.myinfoActivity"/>
+        <activity android:name=".myinfo.statemessageActivity"/>
+        <activity android:name=".money.moneysendActivity"/>
+        <activity android:name=".money.moneychargeActivity"/>
+        <activity android:name=".money.moneyActivity"/>
+        <activity android:name=".quest.questActivity">
+
 
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <uses-library android:name=" org.apache.http.legacy" android:required="false"/>
     </application>
 
 </manifest>
