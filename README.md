@@ -6,7 +6,7 @@
  > 2021.04-2021.11
 
 ## 📝 Project History 📝
-##### You can see more about the project. ->  <a href="https://www.notion.so/daram-daram/wetube-note-5ce971e7d82c4f0fa62f07a469e6a640"><img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white&link=https://www.notion.so/daram-daram/wetube-note-5ce971e7d82c4f0fa62f07a469e6a640"/>
+##### You can see more about the project. ->  <a href="https://daram-daram.notion.site/Honey-Bee-dc47e3828c66424f9a3ec95fd7233ada"><img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white&link=https://daram-daram.notion.site/Honey-Bee-dc47e3828c66424f9a3ec95fd7233ada"/>
 ## Explanation
   - 가족만을 위한 패밀리 네트워킹 시스템인 가족 소통어플을 만든다. 
   - 소통 어플의 전반적인 기능 (채팅, 스토리) 을 만들고,가족 어플만의 퀘스트 기능을 추가해 가족간의 유대감을 키우도록 만들었다.
